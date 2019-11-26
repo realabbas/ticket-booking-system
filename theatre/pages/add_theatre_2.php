@@ -26,7 +26,7 @@ include('header.php');
             </div>
         <div class="box-body">
           <?php
-            $th=mysqli_query($con,"select * from tbl_theatre where id='".$_SESSION['theatre']."'");
+            $th=mysqli_query($con,"select * from tbl_theatre where id=18");
             $theatre=mysqli_fetch_array($th);
           ?>
             <table class="table table-bordered table-hover">
