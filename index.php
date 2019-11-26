@@ -22,7 +22,7 @@ include('header.php');
 					<div class="text list_1_of_2">
 						  <div class="extra-wrap">
 						  	<span style="text-color:#000" class="data"><strong><?php echo $n['name'];?></strong><br>
-						  	<span style="text-color:#000" class="data"><strong>Cast :<?php echo $n['cast'];?></strong><br>
+						  	<span style="text-color:#000" class="data"><strong>Cast :<?php echo $n['type'];?></strong><br>
                                 <div class="data">Match Date :<?php echo $n['news_date'];?></div>
                                 
                                 
@@ -39,10 +39,10 @@ include('header.php');
 			
 		</div>				
 		<div class="listview_1_of_3 images_1_of_3">
-					<h3>Trending Matches</h3>
+					<h3>Watch Match Videos</h3>
 						<div class="middle-list">
 					<?php 
-					$qry4=mysqli_query($con,"select * from tbl_movie order by rand()");
+					$qry4=mysqli_query($con,"select * from tbl_match order by rand()");
 				
 					while($nm=mysqli_fetch_array($qry4))
 					{

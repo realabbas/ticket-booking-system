@@ -7,7 +7,7 @@
 			
 			<?php
           	 $today=date("Y-m-d");
-          	 $qry2=mysqli_query($con,"select * from  tbl_movie ");
+          	 $qry2=mysqli_query($con,"select * from  tbl_match ");
 		
           	  while($m=mysqli_fetch_array($qry2))
                    {
@@ -23,7 +23,7 @@
 						  	</div>
 						  	<div class="movie-text">
 						  		<h4 class="h-text"><a href="about.php?id=<?php echo $m['ticket_id'];?>"><?php echo $m['ticket_name'];?></a></h4>
-						  		Type: <b><?php echo $m['cast'];?></b><br>
+						  		Type: <b><?php echo $m['type'];?></b><br>
 						  		
 						  	</div>
 		  				</div>

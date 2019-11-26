@@ -56,7 +56,7 @@ include('header.php');
                   $show_time=mysqli_fetch_array($st);
                   $sr=mysqli_query($con,"select * from tbl_screens where screen_id='".$show_time['screen_id']."'");
                   $screen=mysqli_fetch_array($sr);
-                  $mv=mysqli_query($con,"select * from tbl_movie where ticket_id='".$shows['ticket_id']."'");
+                  $mv=mysqli_query($con,"select * from tbl_match where ticket_id='".$shows['ticket_id']."'");
                   $movie=mysqli_fetch_array($mv);
                   ?>
                   <td>

@@ -1,5 +1,5 @@
 <?php include('header.php');
-	$qry2=mysqli_query($con,"select * from tbl_movie where ticket_id='".$_GET['id']."'");
+	$qry2=mysqli_query($con,"select * from tbl_match where ticket_id='".$_GET['id']."'");
 	$match=mysqli_fetch_array($qry2);
 	?>
 <div class="content">
@@ -13,7 +13,7 @@
 									<img src="<?php echo $match['image']; ?>" alt=""/>
 								</div>
 								<div class="desc span_3_of_2">
-									<p class="p-link" style="font-size:15px">Type : <?php echo $match['cast']; ?></p>
+									<p class="p-link" style="font-size:15px">Type : <?php echo $match['type']; ?></p>
 									<p class="p-link" style="font-size:15px">Match Date : <?php echo date('d-M-Y',strtotime($match['match_date'])); ?></p>
 									<p style="font-size:15px"><?php echo $match['desc']; ?></p>
 									<a href="<?php echo $match['video_url']; ?>" target="_blank" class="watch_but">Watch Match</a>
@@ -28,7 +28,7 @@
 								
 								while($shw=mysqli_fetch_array($s))
 								{
-									$t=mysqli_query($con,"select * from tbl_theatre where id='".$shw['theatre_id']."'");
+									$t=mysqli_query($con,"select * from tbl_theatre");
 									$theatre=mysqli_fetch_array($t);
 									?>
 									<tr>
@@ -44,7 +44,9 @@
 												
 												?>
 												
-												<a href="check_login.php?show=<?php echo $shh['s_id'];?>&movie=<?php echo $shh['ticket_id'];?>&theatre=<?php echo $shw['theatre_id'];?>"><button class="btn btn-default"><?php echo date('h:i A',strtotime($ttme['start_time']));?></button></a>
+												<a href="check_login.php?show=<?php echo $shh['s_id'];?>&movie=<?php echo $shh['ticket_id'];?>&theatre=<?php echo $shw['theatre_id'];?>"><button class="btn btn-default">
+											
+												<?php echo date('h:i A',strtotime($ttme['start_time']));?></button></a>
 												<?php
 											}
 											?>

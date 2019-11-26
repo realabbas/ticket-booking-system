@@ -55,7 +55,7 @@ extract($_POST);
 <div class="large-7 columns">
 <label>
   Enter One Time Password (OTP)
-  <input type="tel" name="otp"  class="form-control optPass" value="" maxlength="6" autocomplete="off"/>
+  <input type="password" name="otp"  class="form-control optPass" value="" maxlength="6" autocomplete="off"/>
 </label>
 </div>
 <div class="large-5 columns">

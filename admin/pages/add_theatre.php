@@ -15,11 +15,11 @@ include('header.php');
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Add Theatre
+        Add Stadium
       </h1>
       <ol class="breadcrumb">
         <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
-        <li class="active">Add Theatre</li>
+        <li class="active">Add Stadium</li>
       </ol>
     </section>
 
@@ -75,7 +75,7 @@ include('header.php');
                 <?php $frm->validate("password",array("required","label"=>"Password")); // Validating form using form builder written in form.php ?>
               </div>
               <div class="form-group">
-                <button class="btn btn-success">Add Theatre</button>
+                <button class="btn btn-success">Add Stadium</button>
               </div>
               <input type="hidden" name="country" class="form-control" id="country">
               <input type="hidden" class="field" id="route" disabled="true">

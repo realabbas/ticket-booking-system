@@ -15,7 +15,7 @@ $theatre=mysqli_fetch_array($th);
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Theatre Assistance</title>
+  <title>Stadium Admin Panel</title>
   <!-- valodation -->
   <script type="text/javascript" src="../validation/vendor/jquery/jquery-1.10.2.min.js"></script>
   <link rel="stylesheet" href="../validation/dist/css/bootstrapValidator.css"/> 
@@ -51,7 +51,7 @@ $theatre=mysqli_fetch_array($th);
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Theatre</b> Assistant</span>
+      <span class="logo-lg"><b>Stadium</b> Admin Account</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -124,8 +124,8 @@ $theatre=mysqli_fetch_array($th);
         </li>
         
           <li class="treeview">
-          <a href="add_movie.php">
-            <i class="fa fa-plus"></i> <span>Add Movie</span>
+          <a href="add_match.php">
+            <i class="fa fa-plus"></i> <span>Add Match</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -164,8 +164,8 @@ $theatre=mysqli_fetch_array($th);
           </a>
         </li>
         <li class="treeview">
-          <a href="add_theatre_2.php">
-            <i class="fa fa-film"></i> <span>Theatre Details</span>
+          <a href="add_stadium_2.php">
+            <i class="fa fa-film"></i> <span>Stadium Details</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>

@@ -1,5 +1,5 @@
 <?php include('header.php');
-extract($_POST);
+ extract($_POST);
 ?>
 </div>
 <div class="content">
@@ -10,7 +10,8 @@ extract($_POST);
 			
 			<?php
           	 $today=date("Y-m-d");
-          	$qry2=mysqli_query($con,"select DISTINCT ticket_name,ticket_id,image,cast from tbl_movie where ticket_name='".$search."'");
+          	// $qry2=mysqli_query($con,"
+          	$qry2=mysqli_query($con,"select * from tbl_match where ticket_name = '".$search."' ");
 						
           	  while($m=mysqli_fetch_array($qry2))
                    {
@@ -24,7 +25,7 @@ extract($_POST);
 						  	</div>
 						  	<div class="movie-text">
 						  		<h4 class="h-text"><a href="about.php?id=<?php echo $m['ticket_id'];?>"><?php echo $m['ticket_name'];?></a></h4>
-						  		Cast:<Span class="color2"><?php echo $m['cast'];?></span><br>
+						  		Type:<Span class="color2"><?php echo $m['type'];?></span><br>
 						  		
 						  	</div>
 		  				</div>

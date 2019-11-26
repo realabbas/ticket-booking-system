@@ -28,7 +28,7 @@ include('header.php');
               <?php include('../../msgbox.php');?>
               <ul class="todo-list">
                  <?php 
-                        $qry7=mysqli_query($con,"select * from tbl_movie");
+                        $qry7=mysqli_query($con,"select * from tbl_match");
                         if(mysqli_num_rows($qry7))
                         {
                         while($c=mysqli_fetch_array($qry7))

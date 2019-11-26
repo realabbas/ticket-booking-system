@@ -8,11 +8,11 @@ include('header.php');
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Theater Details
+        Stadium Details
       </h1>
       <ol class="breadcrumb">
         <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
-        <li class="active">Theater Details</li>
+        <li class="active">Stadium Details</li>
       </ol>
     </section>
 
@@ -26,16 +26,16 @@ include('header.php');
             </div>
         <div class="box-body">
           <?php
-            $th=mysqli_query($con,"select * from tbl_theatre where id=18");
+            $th=mysqli_query($con,"select * from tbl_theatre");
             $theatre=mysqli_fetch_array($th);
           ?>
             <table class="table table-bordered table-hover">
                 <tr>
-                    <td class="col-md-6">Theater Name</td>
+                    <td class="col-md-6">Stadium Name</td>
                     <td  class="col-md-6"><?php echo $theatre['name'];?></td>
                 </tr>
                 <tr>
-                    <td>Theater Address</td>
+                    <td>Stadium Address</td>
                     <td><?php echo $theatre['address'];?></td>
                 </tr>
                 <tr>
@@ -56,7 +56,7 @@ include('header.php');
       </div>
          <div class="box">
          <div class="box-header with-border">
-              <h3 class="box-title">Screen Details</h3>
+              <h3 class="box-title">Seat Details</h3>
             </div>
         <div class="box-body" id="screendtls">
           <?php
@@ -66,11 +66,11 @@ include('header.php');
           ?>
             <table class="table table-bordered table-hover">
               <th class="col-md-1">Slno</th>
-              <th class="col-md-3">Screen Name</th>
+              <th class="col-md-3">Seat Name</th>
               <th class="col-md-1">Seats</th>
               <th class="col-md-1">Charge</th>
               <th class="col-md-3">Show Time</th>
-              <th class="text-right col-md-3"><button data-toggle="modal" data-target="#view-modal" id="getUser" class="btn btn-sm btn-info"><i class="fa fa-plus"></i> Add Screen</button></th>
+              <th class="text-right col-md-3"><button data-toggle="modal" data-target="#view-modal" id="getUser" class="btn btn-sm btn-info"><i class="fa fa-plus"></i> Add Seat Details</button></th>
                 <?php 
                 $sl=1;
                 while($screen=mysqli_fetch_array($sr))
@@ -116,7 +116,7 @@ include('header.php');
                        <div class="modal-header"> 
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title">
-                            	<i class="fa fa-plus"></i> Add Screen
+                            	<i class="fa fa-plus"></i> Add Seat Details
                             </h4> 
                        </div> 
                        <div class="modal-body"> 

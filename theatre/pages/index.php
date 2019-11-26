@@ -32,16 +32,16 @@ include('header.php');
               <table class="table table-condensed">
                 <tr>
                   <th class="col-md-1">No</th>
-                  <th class="col-md-3">Show Time</th>
-                  <th class="col-md-4">Screen</th>
-                  <th class="col-md-4">Movie</th>
+                  <th class="col-md-3">Time</th>
+                  <th class="col-md-4">Stadium</th>
+                  <th class="col-md-4">Match</th>
                 </tr>
                 <?php 
 					$qry8=mysqli_query($con,"select * from tbl_shows where r_status=1 and theatre_id='".$_SESSION['theatre']."'");
 					$no=1;
 					while($mn=mysqli_fetch_array($qry8))
 					{
-					 $qry9=mysqli_query($con,"select * from tbl_movie where ticket_id='".$mn['ticket_id']."'");
+					 $qry9=mysqli_query($con,"select * from tbl_match where ticket_id='".$mn['ticket_id']."'");
 					 $mov=mysqli_fetch_array($qry9);
 					 $qry10=mysqli_query($con,"select * from tbl_show_time where st_id='".$mn['st_id']."'");
 					 $scr=mysqli_fetch_array($qry10);

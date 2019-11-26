@@ -3,7 +3,7 @@ if(!isset($_SESSION['user']))
 {
 	header('location:login.php');
 }
-	$qry2=mysqli_query($con,"select * from tbl_movie where ticket_id='".$_SESSION['movie']."'");
+	$qry2=mysqli_query($con,"select * from tbl_match where ticket_id='".$_SESSION['movie']."'");
 	$movie=mysqli_fetch_array($qry2);
 	?>
 <div class="content">
@@ -17,7 +17,7 @@ if(!isset($_SESSION['user']))
 									<img src="<?php echo $movie['image']; ?>" alt=""/>
 								</div>
 								<div class="desc span_3_of_2">
-									<p class="p-link" style="font-size:15px">Cast : <?php echo $movie['cast']; ?></p>
+									<p class="p-link" style="font-size:15px">Cast : <?php echo $movie['type']; ?></p>
 									<p class="p-link" style="font-size:15px">Relece Date : <?php echo date('d-M-Y',strtotime($movie['match_date'])); ?></p>
 									<p style="font-size:15px"><?php echo $movie['desc']; ?></p>
 									<a href="<?php echo $movie['video_url']; ?>" target="_blank" class="watch_but">Watch Trailer</a>
@@ -29,12 +29,12 @@ if(!isset($_SESSION['user']))
 								$s=mysqli_query($con,"select * from tbl_shows where s_id='".$_SESSION['show']."'");
 								$shw=mysqli_fetch_array($s);
 								
-									$t=mysqli_query($con,"select * from tbl_theatre where id='".$shw['theatre_id']."'");
+									$t=mysqli_query($con,"select * from tbl_theatre");
 									$theatre=mysqli_fetch_array($t);
 									?>
 									<tr>
 										<td class="col-md-6">
-											Theatre
+											Stadium
 										</td>
 										<td>
 											<?php echo $theatre['name'].", ".$theatre['place'];?>

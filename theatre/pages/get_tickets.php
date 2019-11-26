@@ -8,7 +8,7 @@
     $qq=mysqli_query($con,"select * from tbl_bookings where show_id='".$swt['s_id']."' and date=CURDATE()");
     if(mysqli_num_rows($qq))
     {
-        $m=mysqli_query($con,"select * from tbl_movie where ticket_id='".$swt['ticket_id']."'");
+        $m=mysqli_query($con,"select * from tbl_match where ticket_id='".$swt['ticket_id']."'");
         $movie=mysqli_fetch_array($m);
         ?>
         

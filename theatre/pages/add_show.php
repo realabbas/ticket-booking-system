@@ -16,11 +16,11 @@ include('header.php');
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Add Show
+        Add Match Show
       </h1>
       <ol class="breadcrumb">
         <li><a href="index.php"><i class="fa fa-home"></i> Home</a></li>
-        <li class="active">Add Show</li>
+        <li class="active">Add Match Show</li>
       </ol>
     </section>
 
@@ -33,11 +33,11 @@ include('header.php');
           <?php include('../../msgbox.php');?>
           <form action="process_addshow.php" method="post" id="form1">
             <div class="form-group">
-              <label class="control-label">Select Movie</label>
+              <label class="control-label">Select Match</label>
               <select name="movie" class="form-control">
-                <option value>Select Movie</option>
+                <option value>Select Match</option>
                 <?php
-                  $mv=mysqli_query($con,"select * from tbl_movie where status='0'");
+                  $mv=mysqli_query($con,"select * from tbl_match where status='0'");
                   while($movie=mysqli_fetch_array($mv))
                   {
                     ?>

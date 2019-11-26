@@ -10,18 +10,11 @@
 		                   </ul>
 		              </div>
 				</div>
-				<div class="col_1_of_4 span_1_of_4">
-					<div class="textcontact">
-						<p>Theatre Assistance<br>
-						Theatre 3D Movie<br>
-						Ph: +1-800-234-52589.<br>
-						</p>
-					</div>
-				</div>
+				
 				<div class="col_1_of_4 span_1_of_4">
 					<div class="call_info">
 						<p class="txt_3">Call us toll free:</p>
-						<p class="txt_4">1 800 234 23456</p>
+						<p class="txt_4">1800 234 23456</p>
 					</div>
 				</div>
 				<div class="col_1_of_4 span_1_of_4">
@@ -76,7 +69,7 @@
             source: function(term, suggest){
                 term = term.toLowerCase();
                 <?php
-						$qry2=mysqli_query($con,"select * from tbl_movie");
+						$qry2=mysqli_query($con,"select * from tbl_match");
 						?>
                var string="";
                 <?php $string="";

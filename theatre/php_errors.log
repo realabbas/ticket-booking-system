@@ -8,7 +8,7 @@
 [20-May-2017 18:08:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/theatre/pages/index.php:0
 [20-May-2017 18:08:01 UTC] PHP   2. include() /home/ubuntu/workspace/theatre/pages/index.php:2
 [20-May-2017 18:08:01 UTC] PHP   3. mysqli_fetch_array() /home/ubuntu/workspace/theatre/pages/header.php:9
-[20-May-2017 19:10:10 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/theatre/pages/process_add_movie.php on line 8
+[20-May-2017 19:10:10 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/theatre/pages/process_add_match.php on line 8
 [21-May-2017 07:15:13 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/ubuntu/workspace/theatre/pages/view_shows.php on line 50
 [21-May-2017 07:15:29 UTC] PHP Warning:  mysqli_query(): (21000/1242): Subquery returns more than 1 row in /home/ubuntu/workspace/theatre/pages/view_shows.php on line 44
 [21-May-2017 07:15:29 UTC] PHP Stack trace:

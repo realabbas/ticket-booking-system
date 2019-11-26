@@ -40,18 +40,18 @@ include('header.php');
         <div class="box-body">
             <form action="process_add_news.php" method="post" enctype="multipart/form-data" id="form1">
               <div class="form-group">
-                <label class="control-label">Movie name</label>
+                <label class="control-label">Match name</label>
                 <input type="text" name="name" class="form-control"/>
                 <?php $frm->validate("name",array("required","label"=>"Movie Name")); // Validating form using form builder written in form.php ?>
               </div>
               <div class="form-group">
-                 <label class="control-label">Cast</label>
+                 <label class="control-label">Type</label>
                 <input type="text" name="cast" class="form-control">
                 <?php $frm->validate("cast",array("required","label"=>"Cast","regexp"=>"text")); // Validating form using form builder written in form.php ?>
               </div>
               
               <div class="form-group">
-                <label class="control-label">Release Date</label>
+                <label class="control-label">Match Date</label>
                 <input type="date" name="date" class="form-control"/>
                 <?php $frm->validate("date",array("required","label"=>"Release Date")); // Validating form using form builder written in form.php ?>
               </div>

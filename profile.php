@@ -3,7 +3,7 @@ if(!isset($_SESSION['user']))
 {
 	header('location:login.php');
 }
-	$qry2=mysqli_query($con,"select * from tbl_movie where ticket_id='".$_SESSION['movie']."'");
+	$qry2=mysqli_query($con,"select * from tbl_match where ticket_id='".$_SESSION['movie']."'");
 	$movie=mysqli_fetch_array($qry2);
 	?>
 <div class="content">
@@ -33,7 +33,7 @@ if(!isset($_SESSION['user']))
 						<?php
 						while($bkg=mysqli_fetch_array($bk))
 						{
-							$m=mysqli_query($con,"select * from tbl_movie where ticket_id=(select ticket_id from tbl_shows where s_id='".$bkg['show_id']."')");
+							$m=mysqli_query($con,"select * from tbl_match where ticket_id=(select ticket_id from tbl_shows where s_id='".$bkg['show_id']."')");
 							$mov=mysqli_fetch_array($m);
 							$s=mysqli_query($con,"select * from tbl_screens where screen_id='".$bkg['screen_id']."'");
 							$srn=mysqli_fetch_array($s);
