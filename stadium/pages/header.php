@@ -77,7 +77,7 @@ $theatre=mysqli_fetch_array($th);
                 <img src="cinema-512.png" class="img-circle" alt="User Image">
 
                 <p>
-                  Theatre Assistance
+                  Stadium 
                 </p>
               </li>
               <li class="user-footer">
@@ -88,9 +88,9 @@ $theatre=mysqli_fetch_array($th);
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
-          <li>
+          <!-- <li>
             <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>

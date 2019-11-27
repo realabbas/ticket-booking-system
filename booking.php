@@ -3,24 +3,24 @@ if(!isset($_SESSION['user']))
 {
 	header('location:login.php');
 }
-	$qry2=mysqli_query($con,"select * from tbl_match where ticket_id='".$_SESSION['movie']."'");
-	$movie=mysqli_fetch_array($qry2);
+	$qry2=mysqli_query($con,"select * from tbl_match where ticket_id='".$_SESSION['match']."'");
+	$match=mysqli_fetch_array($qry2);
 	?>
 <div class="content">
 	<div class="wrap">
 		<div class="content-top">
 				<div class="section group">
 					<div class="about span_1_of_2">	
-						<h3><?php echo $movie['ticket_name']; ?></h3>	
+						<h3><?php echo $match['ticket_name']; ?></h3>	
 							<div class="about-top">	
 								<div class="grid images_3_of_2">
-									<img src="<?php echo $movie['image']; ?>" alt=""/>
+									<img src="<?php echo $match['image']; ?>" alt=""/>
 								</div>
 								<div class="desc span_3_of_2">
-									<p class="p-link" style="font-size:15px">Cast : <?php echo $movie['type']; ?></p>
-									<p class="p-link" style="font-size:15px">Relece Date : <?php echo date('d-M-Y',strtotime($movie['match_date'])); ?></p>
-									<p style="font-size:15px"><?php echo $movie['desc']; ?></p>
-									<a href="<?php echo $movie['video_url']; ?>" target="_blank" class="watch_but">Watch Trailer</a>
+									<p class="p-link" style="font-size:15px">Type : <?php echo $match['type']; ?></p>
+									<p class="p-link" style="font-size:15px"> Date : <?php echo date('d-M-Y',strtotime($match['match_date'])); ?></p>
+									<p style="font-size:15px"><?php echo $match['desc']; ?></p>
+									<a href="<?php echo $match['video_url']; ?>" target="_blank" class="watch_but">Watch Match</a>
 								</div>
 								<div class="clear"></div>
 							</div>

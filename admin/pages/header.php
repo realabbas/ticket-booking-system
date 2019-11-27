@@ -75,7 +75,7 @@ include('../../config.php');
                 <img src="admin.png" class="img-circle" alt="User Image">
 
                 <p>
-                  Theatre Assistant
+                Admin
                 </p>
               </li>
               <li class="user-footer">
@@ -86,9 +86,9 @@ include('../../config.php');
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
-          <li>
+          <!-- <li>
             <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>
@@ -109,8 +109,7 @@ include('../../config.php');
         </div>
       </div>
       
-      <!-- /.search form -->
-      <!-- sidebar menu: : style can be found in sidebar.less -->
+      
       <ul class="sidebar-menu">
         <li class="treeview">
           <a href="index.php">

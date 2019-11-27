@@ -10,6 +10,8 @@ date_default_timezone_set('Asia/Kolkata');
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+
+<link rel="stylesheet" href="css/w3.css" type="text/css" media="all" />
 <link type="text/css" rel="stylesheet" href="http://www.dreamtemplate.com/dreamcodes/tabs/css/tsc_tabs.css" />
 <link rel="stylesheet" href="css/tsc_tabs.css" type="text/css" media="all" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -29,6 +31,7 @@ date_default_timezone_set('Asia/Kolkata');
 			<a href="index.php">
 				<img src="images/logo.png"
 				style="height:150px"
+				class="w3-image"
 				alt=""/>
 			</a>
 		</div>

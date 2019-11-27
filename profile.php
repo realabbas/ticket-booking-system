@@ -3,7 +3,7 @@ if(!isset($_SESSION['user']))
 {
 	header('location:login.php');
 }
-	$qry2=mysqli_query($con,"select * from tbl_match where ticket_id='".$_SESSION['movie']."'");
+	$qry2=mysqli_query($con,"select * from tbl_match where ticket_id='".$_SESSION['match']."'");
 	$movie=mysqli_fetch_array($qry2);
 	?>
 <div class="content">

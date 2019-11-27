@@ -44,6 +44,7 @@
                 padding:8px 15px;
                 background-color:#fff;
                 border:0px solid #dbdbdb;
+                color: black;
 }
 #button111 {
                 position:relative;
